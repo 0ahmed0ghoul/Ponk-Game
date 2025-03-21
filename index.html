@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponk</title>
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+            <div class="content">
+                <div class="stopRestart"></div>
+                <div class="parameteres">
+
+                    <div class="brutalist-container"><br>
+                      <input class="brutalist-input smooth-type"type="number" min="1" placeholder="1" value="1"/><br>
+                      <label class="brutalist-label" id="labele">GAME DURATION (minutes)</label>
+                    </div>
+
+                    <div class="brutalist-container" style=" display: flex ; width:200px ;">
+                    <input class="brutalist-input smooth-type track-number" type="number" placeholder="3" min="3" id="rows" required />
+                    <input class="brutalist-input smooth-type track-number" type="number" placeholder="3" min="3" id="columns" required/><br>
+                    <label class="brutalist-label" id="labele">GAME DIMENSIONS (row*col)</label>
+                    </div>
+                    
+                    <div class="brutalist-container brutalist-container">
+                      <input class="brutalist-input smooth-type" type="number"min="500" placeholder="100" step="100" value="1000"/>
+                      <label class="brutalist-label" id="labele">GAME SPEED (milliseconds)</label>
+                    </div>
+
+                </div>     
+
+                <div class="start_score">
+                    <div class="heart">
+                        <button id="generate">Play</button>
+                        <p id="score">SCORE : </p>   
+                        <p id="hearts"><img src="./img/heart.png" id="h1"><img src="./img/heart.png" id="h2"><img src="./img/heart.png" id="h3"></p>
+                    </div>
+                </div>
+
+                <h2>Playboard</h2>
+
+                <p id="time">0:00</p>
+
+                <div class="game">  
+                    <div id="grid-container"></div>
+                </div>
+            </div>
+    </div>
+
+    
+
+
+    <script src="./scrpit.js"></script>
+</body>
+</html>
